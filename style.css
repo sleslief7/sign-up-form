@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 :root {
-    --heading-fonts: "Poetsen One", sans-serif;
+    --heading-fonts: "Kalam", cursive;
     --form-font: "Lato", sans-serif;
-    --general-font: "Playfair Display", serif;
+    --general-font: "Kalam", cursive;
 
     --heading-color: white;
     --brown-opacity: rgba(161, 113, 2, 0.237);
     --brown: rgb(42, 24, 0);
+    background-color: var(--brown);
 }
 #container {
     width: 100vw;
@@ -27,7 +28,7 @@
     position: relative;
 }
 #logo {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.771);
     font-family: var(--heading-fonts);
     width: 100%;
     height: 4rem;
@@ -36,7 +37,7 @@
     padding: 5px;
     text-align: center;
     position: relative;
-    top: 45%;
+    top: 62%;
 }
 #img-footer {
     font-family: var(--general-font);
@@ -98,6 +99,7 @@
 input {
     margin-bottom: 1em;
     border-radius: 4px;
+    padding-left: 4px;
     width: 13em;
     height: 2em;
 }
@@ -153,6 +155,7 @@ button:active {
         height: 400px;
     }
     #logo {
+        height: 4.5rem;
         font-size: 3rem;
     }
     #img-footer {
@@ -169,7 +172,7 @@ button:active {
         width: 10em;
     }
     #form-inputs{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         align-items: center;
         justify-content: center;
     }
@@ -181,5 +184,17 @@ button:active {
     }
     footer > p {
         padding-bottom: 1rem;
+    }
+    #img-footer {
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        margin: 0;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
