@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/40a1961b17.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="img-container">
+            <div id="logo">
+                <i class="fa-solid fa-cake-candles"></i>
+                Baking classes
+            </div>
+            <p id="img-footer">Photo by 
+                <a href="https://unsplash.com/@jennybakes" target="_blank" rel="noopener noreferrer">
+                Jenny Galloway</a> 
+                on 
+                <a href="https://unsplash.com/photos/macaroon-on-cake-tW0Ix_Ajg6Y" target="_blank" rel="noopener noreferrer">
+                Unsplash</a>
+            </p>
+        </div>
+        <div id="form-container">
+            <h1>Learn how to bake in 3 days!!</h1>
+            <p>This is not a real online service!</p>
+            <div id="form">
+                <form action="#" method="post">
+                    <div id="form-div">
+                        <h2>Let's do this!</h2>
+                        <div id="form-inputs">
+                            <div id="col-1">
+                                <div>
+                                    <label for="first-name">* FIRST NAME</label>
+                                    <br>
+                                    <input type="text" id="first-name">
+                                </div>
+                                <div>
+                                    <label for="email">* EMAIL</label>
+                                    <br>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div>
+                                    <label for="password">* PASSWORD</label>
+                                    <br>
+                                    <input type="password" id="password" required>
+                                </div>
+                            </div>
+                            <div id="col-2">
+                                <div>
+                                    <label for="last-name">* LAST NAME</label>
+                                    <br>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                                <div>
+                                    <label for="phone-number">* PHONE NUMBER</label>
+                                    <br>
+                                    <input type="text" id="phone-number" pattern="(^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$)" required>
+                                </div>
+                                <div>
+                                    <label for="confirm-password">* CONFIRM PASSWORD</label>
+                                    <br>
+                                    <input type="password" id="confirm-password" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a id="log-in" href="#" target="_blank" rel="noopener noreferrer">Log in</a></p>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
