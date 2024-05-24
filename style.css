@@ -10,7 +10,7 @@
 
     --heading-color: white;
     --brown-opacity: rgba(161, 113, 2, 0.237);
-    --pink: rgb(246, 207, 248);
+    --brown: rgb(42, 24, 0);
 }
 #container {
     width: 100vw;
@@ -20,10 +20,11 @@
 }
 #img-container {
     background-image: url("./src/cakePicture.jpg");
-    background-position: bottom;
+    background-position: bottom center;
     background-size: cover;
     width: 40%;
     height: 100%;
+    position: relative;
 }
 #logo {
     background-color: rgba(0, 0, 0, 0.5);
@@ -52,8 +53,8 @@
 #img-footer > a:visited {
     color: var(--heading-color);
 }
-#img-footer > a:hover {
-    color: var(--pink);
+#img-footer > a:hover, #log-in:hover {
+    text-decoration: underline;
 }
 #form-container {
     display: flex;
@@ -61,7 +62,7 @@
     align-items: center;
     justify-content: center;
     width: 60%;
-    background-color: rgb(42, 24, 0);
+    background-color: var(--brown);
 }
 #form-container > h1 {
     text-align: center;
@@ -92,6 +93,7 @@
     gap: 1.5rem;
     font-family: var(--form-font);
     color: bisque;
+    font-size: 0.8rem;
 }
 input {
     margin-bottom: 1em;
@@ -101,14 +103,13 @@ input {
 }
 input:focus {
     border: 1.5px solid blue;
-    box-shadow: 2px 2px 5px 2px grey;
-}
-input:invalid {
-    border: 1.5px solid red;
+    box-shadow: 2px 2px 5px 2px rgb(25, 16, 0);
 }
 input:required {
     border: 1.5px solid grey;
-
+}
+input:invalid {
+    border: 2px solid red;
 }
 footer {
     margin-left: 2em;
@@ -137,15 +138,48 @@ button:active {
     translate: 2px 2px;
 }
 #log-in {
-    color: var(--pink);
+    color: var(--heading-color);
     font-weight: bolder;
     text-decoration: none;
 }
-#log-in:hover {
-    color: var(--heading-color);
-}
-@media screen and (min-width: 600px) and (max-width: 320px) {
+
+@media screen and (max-width: 810px) {
     #container {
-        display: static;
+        height: auto;
+        flex-direction: column;
+    }
+    #img-container {
+        width: 100%;
+        height: 400px;
+    }
+    #logo {
+        font-size: 3rem;
+    }
+    #img-footer {
+        left: 1em;
+        bottom: 0.4em;
+    }
+    #form-container {
+        width: 100%;
+    }
+    #form-container > h1 {
+        padding: 1rem;
+    }
+    input {
+        width: 10em;
+    }
+    #form-inputs{
+        font-size: 0.7rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #form-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer > p {
+        padding-bottom: 1rem;
     }
 }
